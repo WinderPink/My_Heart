@@ -14,6 +14,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            touch-action: none;
         }
         canvas {
             display: block;
@@ -234,6 +235,11 @@
         }
 
         draw();
+
+        window.addEventListener('resize', () => {
+            location.reload(); 
+        });
+
     </script>
 </body>
 </html>
